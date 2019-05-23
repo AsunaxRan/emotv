@@ -1,0 +1,48 @@
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Condensed', sans-serif;
+
+@import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
+
+body {
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main-block__content .row {
+    margin-left: -5px;
+    margin-right: -5px;
+
+    & [class^='col-'] {
+        padding-left: 5px;
+        padding-right: 5px; 
+    }
+}
+
+.movie {
+    display: block;
+    .movie-img {
+        position: relative;
+        padding-top: 125%;
+        overflow: hidden;
+        img {
+            vertical-align: middle;
+        }
+    }
+}
