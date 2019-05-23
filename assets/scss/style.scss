@@ -1,7 +1,42 @@
+/* My variables */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
+$bg-block: #121212;
+$bg-section: #191919;
+$black-25: #252525;
+$black-555: #555;
+
+/* Custom Bootstrap variables */
+$h2-font-size: 1.5rem;
+$small-font-size: 85%;
+$grid-gutter-width: 1rem;
+$body-bg: $bg-block;
+$yellow: #dacb46;
+$cyan: #46e1ff;
+$link-color: $cyan;
+$link-hover-color: $yellow;
+$link-hover-decoration: none;
+$body-color: #bbb;
 
 @import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
+
+/* Custom Bootstrap utility class */
+a.text-info {
+    @include hover-focus {
+        color: $yellow !important;
+    }
+}
+
+a.text-warning {
+    @include hover-focus {
+        color: $cyan !important;
+    }
+}
+
+/* My utility class */
+.bg-section {
+    background-color: $bg-section;
+}
 
 body {
     font-family: $font-primary;
@@ -12,12 +47,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 1.75rem;
-}
-
-a, a:hover {
-    text-decoration: none;
+ul {
+    list-style-type: none;
 }
 
 .wrapper {
@@ -25,24 +56,73 @@ a, a:hover {
     overflow: hidden;
 }
 
-.main-block__content .row {
-    margin-left: -5px;
-    margin-right: -5px;
-
-    & [class^='col-'] {
-        padding-left: 5px;
-        padding-right: 5px; 
-    }
-}
-
 .movie {
     display: block;
+    position: relative;
+    margin-bottom: 0.75rem;
     .movie-img {
         position: relative;
         padding-top: 125%;
         overflow: hidden;
         img {
-            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .movie-status {
+        position: absolute;
+        top: 8px;
+        left: 5px;
+    }
+}
+
+
+.tag {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 1em;
+    font-size: $small-font-size;
+    background-color: $black-25;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    text-transform: capitalize;
+    transition: .2s;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -15px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-color: transparent $black-25 transparent transparent;
+        border-style: solid;
+        border-width: 15px 15px 15px 0;
+        transition: .2s;
+    }
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-top: -3px;
+        background-color: $white;
+        border-radius: 100%;
+    }
+
+    &:hover {
+        background-color: $black-555;
+        color: $white;
+        &::before {
+            border-right-color: $black-555;
         }
     }
 }
