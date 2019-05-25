@@ -10603,14 +10603,19 @@ ul {
 
 .movie .movie-img {
   position: relative;
-  padding-top: 125%;
+  padding-top: 140%;
   overflow: hidden;
 }
 
-.movie .movie-img img {
+.movie .movie-img__inner {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .movie .movie-status {

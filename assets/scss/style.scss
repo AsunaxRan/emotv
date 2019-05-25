@@ -62,12 +62,17 @@ ul {
     margin-bottom: 0.75rem;
     .movie-img {
         position: relative;
-        padding-top: 125%;
+        padding-top: 140%;
         overflow: hidden;
-        img {
+        &__inner {
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
         }
     }
     .movie-status {
