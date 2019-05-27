@@ -1,22 +1,23 @@
 /* My variables */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
-$bg-block: #121212;
-$bg-section: #191919;
+$black-12: #121212;
+$black-19: #191919;
 $black-25: #252525;
 $black-555: #555;
+$black-111: #111;
 
 /* Custom Bootstrap variables */
-$h2-font-size: 1.5rem;
-$small-font-size: 85%;
-$grid-gutter-width: 1rem;
-$body-bg: $bg-block;
-$yellow: #dacb46;
-$cyan: #46e1ff;
-$link-color: $cyan;
-$link-hover-color: $yellow;
+$h2-font-size:          1.5rem;
+$small-font-size:       85%;
+$grid-gutter-width:     1rem;
+$body-bg:               $black-12;
+$yellow:                #dacb46;
+$cyan:                  #46e1ff;
+$link-color:            $cyan;
+$link-hover-color:      $yellow;
 $link-hover-decoration: none;
-$body-color: #bbb;
+$body-color:            #bbb;
 
 @import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
 
@@ -35,7 +36,11 @@ a.text-warning {
 
 /* My utility class */
 .bg-section {
-    background-color: $bg-section;
+    background-color: $black-19;
+}
+
+.text-silver {
+    color: rgba($white, 0.8);
 }
 
 body {
@@ -62,18 +67,46 @@ ul {
     margin-bottom: 0.75rem;
     .movie-img {
         position: relative;
-        padding-top: 125%;
+        padding-top: 140%;
         overflow: hidden;
-        img {
+        &__inner {
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
         }
     }
     .movie-status {
         position: absolute;
+        color: $white;
+        background: $red;
+        font-size: 75%;
+        text-shadow: 1px 1px 2px $black-111;
+        left: 2px;
         top: 8px;
-        left: 5px;
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+        height: 24px;
+        line-height: 24px;
+        max-width: 85%;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -14px;
+            width: 0;
+            height: 0;
+            border-color: transparent transparent transparent $red;
+            border-style: solid;
+            border-width: 12px 0 12px 14px;
+        }
+        span {
+            display: inline-block;
+            max-width: 100%;
+        }
     }
 }
 
@@ -87,7 +120,7 @@ ul {
     font-size: $small-font-size;
     background-color: $black-25;
     border-radius: 0 3px 3px 0;
-    color: #fff;
+    color: $white;
     text-transform: capitalize;
     transition: .2s;
 
