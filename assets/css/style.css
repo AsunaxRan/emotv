@@ -10622,6 +10622,10 @@ ul {
   background-position: center center;
 }
 
+.movie .movie-img:hover {
+  opacity: 0.7;
+}
+
 .movie .movie-status {
   position: absolute;
   color: #fff;
@@ -10654,7 +10658,13 @@ ul {
   max-width: 100%;
 }
 
-.tag {
+.tag-list li {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-list .tag {
   position: relative;
   display: inline-block;
   height: 30px;
@@ -10669,7 +10679,7 @@ ul {
   transition: .2s;
 }
 
-.tag::before {
+.tag-list .tag::before {
   position: absolute;
   top: 0;
   left: -15px;
@@ -10683,7 +10693,7 @@ ul {
   transition: .2s;
 }
 
-.tag::after {
+.tag-list .tag::after {
   position: absolute;
   top: 50%;
   left: 0;
@@ -10697,12 +10707,12 @@ ul {
   border-radius: 100%;
 }
 
-.tag:hover {
+.tag-list .tag:hover {
   background-color: #555;
   color: #fff;
 }
 
-.tag:hover::before {
+.tag-list .tag:hover::before {
   border-right-color: #555;
 }
 /*# sourceMappingURL=style.css.map */

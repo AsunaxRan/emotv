@@ -79,6 +79,9 @@ ul {
             background-size: cover;
             background-position: center center;
         }
+        &:hover {
+            opacity: 0.7;
+        }
     }
     .movie-status {
         position: absolute;
@@ -111,51 +114,58 @@ ul {
 }
 
 
-.tag {
-    position: relative;
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 1em;
-    font-size: $small-font-size;
-    background-color: $black-25;
-    border-radius: 0 3px 3px 0;
-    color: $white;
-    text-transform: capitalize;
-    transition: .2s;
-
-    &::before {
-        position: absolute;
-        top: 0;
-        left: -15px;
-        content: '';
-        width: 0;
-        height: 0;
-        border-color: transparent $black-25 transparent transparent;
-        border-style: solid;
-        border-width: 15px 15px 15px 0;
-        transition: .2s;
+.tag-list {
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
     }
-
-    &::after {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: 2;
-        display: block;
-        content: '';
-        width: 6px;
-        height: 6px;
-        margin-top: -3px;
-        background-color: $white;
-        border-radius: 100%;
-    }
-
-    &:hover {
-        background-color: $black-555;
+    .tag {
+        position: relative;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 1em;
+        font-size: $small-font-size;
+        background-color: $black-25;
+        border-radius: 0 3px 3px 0;
         color: $white;
+        text-transform: capitalize;
+        transition: .2s;
+    
         &::before {
-            border-right-color: $black-555;
+            position: absolute;
+            top: 0;
+            left: -15px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-color: transparent $black-25 transparent transparent;
+            border-style: solid;
+            border-width: 15px 15px 15px 0;
+            transition: .2s;
+        }
+    
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-top: -3px;
+            background-color: $white;
+            border-radius: 100%;
+        }
+    
+        &:hover {
+            background-color: $black-555;
+            color: $white;
+            &::before {
+                border-right-color: $black-555;
+            }
         }
     }
 }
