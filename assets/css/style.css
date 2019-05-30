@@ -10572,6 +10572,10 @@ a.text-warning:hover, a.text-warning:focus {
   color: #46e1ff !important;
 }
 
+a.text-light:hover, a.text-light:focus {
+  color: #dacb46 !important;
+}
+
 /* My utility class */
 .bg-section {
   background-color: #191919;
@@ -10714,5 +10718,66 @@ ul {
 
 .tag-list .tag:hover::before {
   border-right-color: #555;
+}
+
+#ranking #ranking-tab {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+#ranking #ranking-tab .nav-item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+}
+
+#ranking #ranking-tab .nav-item:hover {
+  color: #dacb46;
+}
+
+#ranking #ranking-tab .nav-item.active {
+  color: #46e1ff;
+}
+
+#ranking #ranking-tabContent .rank-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#ranking #ranking-tabContent .rank-item .left {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+#ranking #ranking-tabContent .rank-item .left .thumb {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding-top: 133.333%;
+}
+
+#ranking #ranking-tabContent .rank-item .left .thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#ranking #ranking-tabContent .rank-item .left .thumb:hover {
+  opacity: 0.7;
+}
+
+#ranking #ranking-tabContent .rank-item .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */

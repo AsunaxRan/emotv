@@ -6,6 +6,7 @@ $black-19: #191919;
 $black-25: #252525;
 $black-555: #555;
 $black-111: #111;
+$black-333: #333;
 
 /* Custom Bootstrap variables */
 $h2-font-size:          1.5rem;
@@ -31,6 +32,12 @@ a.text-info {
 a.text-warning {
     @include hover-focus {
         color: $cyan !important;
+    }
+}
+
+a.text-light {
+    @include hover-focus {
+        color: $yellow !important;
     }
 }
 
@@ -165,6 +172,54 @@ ul {
             color: $white;
             &::before {
                 border-right-color: $black-555;
+            }
+        }
+    }
+}
+
+#ranking {
+    #ranking-tab {
+        border-top: 1px solid $black-333;
+        border-bottom: 1px solid $black-333;
+        .nav-item {
+            text-align: center;
+            flex: 1;
+            color: $white;
+            &:hover {
+                color: $yellow;
+            }
+            &.active {
+                color: $cyan;
+            }
+        }
+    }
+    #ranking-tabContent {
+        .rank-item {
+            display: flex;
+            flex-wrap: nowrap;
+            .left {
+                width: 80px;
+                margin-right: 1rem;
+                .thumb {
+                    display: inline-block;
+                    width: 100%;
+                    position: relative;
+                    padding-top: 133.333%;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .right {
+                flex: 1;
             }
         }
     }
