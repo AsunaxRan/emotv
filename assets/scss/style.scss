@@ -7,6 +7,7 @@ $black-25: #252525;
 $black-555: #555;
 $black-111: #111;
 $black-333: #333;
+$silver: rgba(#fff, 0.8);
 
 /* Custom Bootstrap variables */
 $h2-font-size:          1.5rem;
@@ -47,7 +48,37 @@ a.text-light {
 }
 
 .text-silver {
-    color: rgba($white, 0.8);
+    color: $silver;
+}
+
+.ratio69 {
+    position: relative;
+    padding-top: 133.33%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.small-gutter {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+
+    > .col,
+    > [class*="col-"] {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
 }
 
 body {
@@ -57,6 +88,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-secondary;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 ul {
@@ -72,25 +104,31 @@ ul {
     display: block;
     position: relative;
     margin-bottom: 0.75rem;
-    .movie-img {
+    &__thumb {
         position: relative;
-        padding-top: 140%;
+        padding-top: 133.33%;
         overflow: hidden;
-        &__inner {
+        img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
+            object-fit: cover;
         }
         &:hover {
             opacity: 0.7;
         }
     }
-    .movie-status {
+    &__meta {
+        padding-top: 0.5rem;
+        span {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+    &__status {
         position: absolute;
         color: $white;
         background: $red;
@@ -116,6 +154,8 @@ ul {
         span {
             display: inline-block;
             max-width: 100%;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
         }
     }
 }
@@ -197,14 +237,15 @@ ul {
         .rank-item {
             display: flex;
             flex-wrap: nowrap;
-            .left {
+            padding: 0.5rem 1rem;
+            &__thumb {
                 width: 80px;
                 margin-right: 1rem;
-                .thumb {
-                    display: inline-block;
+                .thumb-holder {
+                    display: block;
                     width: 100%;
                     position: relative;
-                    padding-top: 133.333%;
+                    padding-top: 133.33%;
                     img {
                         position: absolute;
                         top: 0;
@@ -213,14 +254,43 @@ ul {
                         height: 100%;
                         object-fit: cover;
                     }
-                    &:hover {
-                        opacity: 0.7;
-                    }
                 }
             }
-            .right {
+            &__meta {
                 flex: 1;
+                color: $yellow;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+            &:hover {
+                background-color: $black-25;
+                img {
+                    opacity: 0.7;
+                }
             }
         }
+    }
+}
+
+.actor {
+    display: block;
+    margin-bottom: 0.5rem;
+    &__thumb {
+        border: 1px solid $black-333;
+        border-radius: $border-radius;
+        overflow: hidden;
+        img {
+            opacity: 0.7;
+        }
+    }
+    &__name {
+        display: inline-block;
+        width: 100%;
+        font-size: $small-font-size;
+        vertical-align: middle;
+        color: $silver;
     }
 }
