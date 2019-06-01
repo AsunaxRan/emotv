@@ -10585,13 +10585,14 @@ a.text-light:hover, a.text-light:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.ratio69 {
+/* My function */
+.img-34 {
   position: relative;
-  padding-top: 133.33%;
   overflow: hidden;
+  padding-top: 133.33%;
 }
 
-.ratio69 img {
+.img-34 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -10601,8 +10602,40 @@ a.text-light:hover, a.text-light:focus {
      object-fit: cover;
 }
 
-.ratio69:hover {
+.img-34:hover {
   opacity: 0.7;
+}
+
+.img-169 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.img-169 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-52 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40%;
+}
+
+.img-52 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .small-gutter {
@@ -10677,7 +10710,7 @@ ul {
   background: #dc3545;
   font-size: 75%;
   text-shadow: 1px 1px 2px #111;
-  left: 2px;
+  left: 1px;
   top: 8px;
   -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
@@ -10705,9 +10738,14 @@ ul {
   padding-right: 0.25rem;
 }
 
+.tag-list {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
 .tag-list li {
   display: inline-block;
-  margin-right: 1rem;
+  margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -10857,5 +10895,110 @@ ul {
   font-size: 85%;
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-movie {
+  display: block;
+  position: relative;
+  color: #fd7e14;
+}
+
+.hero-movie__meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.25rem 0.5rem;
+}
+
+.hero-movie__meta span {
+  display: block;
+}
+
+.hero-movie__status {
+  position: absolute;
+  color: #fff;
+  background: #dc3545;
+  font-size: 75%;
+  text-shadow: 1px 1px 2px #111;
+  left: 1px;
+  top: 8px;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  height: 24px;
+  line-height: 24px;
+  max-width: 85%;
+}
+
+.hero-movie__status::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -14px;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #dc3545;
+  border-style: solid;
+  border-width: 12px 0 12px 14px;
+}
+
+.hero-movie__status span {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slick-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0.8;
+  left: 0;
+}
+
+.slider .slick-prev:hover {
+  color: #fd7e14;
+  opacity: 1;
+}
+
+.slider .slick-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0.8;
+  right: 0;
+}
+
+.slider .slick-next:hover {
+  color: #fd7e14;
+  opacity: 1;
+}
+
+.slider--movie .slick-prev {
+  left: 0.25rem;
+}
+
+.slider--movie .slick-next {
+  right: 0.25rem;
 }
 /*# sourceMappingURL=style.css.map */

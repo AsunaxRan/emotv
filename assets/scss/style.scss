@@ -51,10 +51,20 @@ a.text-light {
     color: $silver;
 }
 
-.ratio69 {
+/* My function */
+@mixin make-image-holder($ratio: 34, $hover: 0) {
     position: relative;
-    padding-top: 133.33%;
     overflow: hidden;
+
+    @if $ratio ==  34 {
+        padding-top: 133.33%;
+    }
+    @if $ratio == 169 {
+        padding-top: 56.25%;
+    }
+    @if $ratio == 52 {
+        padding-top: 40%;
+    }
 
     img {
         position: absolute;
@@ -65,9 +75,23 @@ a.text-light {
         object-fit: cover;
     }
 
-    &:hover {
-        opacity: 0.7;
+    @if $hover != 0 {
+        &:hover {
+            opacity: 0.7;
+        }
     }
+}
+
+.img-34 {
+    @include make-image-holder(34, 1);
+}
+
+.img-169 {
+    @include make-image-holder(169, 0);
+}
+
+.img-52 {
+    @include make-image-holder(52, 0);
 }
 
 .small-gutter {
@@ -100,6 +124,39 @@ ul {
     overflow: hidden;
 }
 
+@mixin ribbon {
+    position: absolute;
+    color: $white;
+    background: $red;
+    font-size: 75%;
+    text-shadow: 1px 1px 2px $black-111;
+    left: 1px;
+    top: 8px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    height: 24px;
+    line-height: 24px;
+    max-width: 85%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -14px;
+        width: 0;
+        height: 0;
+        border-color: transparent transparent transparent $red;
+        border-style: solid;
+        border-width: 12px 0 12px 14px;
+    }
+
+    span {
+        display: inline-block;
+        max-width: 100%;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
+
 .movie {
     display: block;
     position: relative;
@@ -129,42 +186,29 @@ ul {
         }
     }
     &__status {
-        position: absolute;
-        color: $white;
-        background: $red;
-        font-size: 75%;
-        text-shadow: 1px 1px 2px $black-111;
-        left: 2px;
-        top: 8px;
-        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
-        height: 24px;
-        line-height: 24px;
-        max-width: 85%;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: -14px;
-            width: 0;
-            height: 0;
-            border-color: transparent transparent transparent $red;
-            border-style: solid;
-            border-width: 12px 0 12px 14px;
-        }
-        span {
-            display: inline-block;
-            max-width: 100%;
-            padding-left: 0.25rem;
-            padding-right: 0.25rem;
-        }
+        @include ribbon();
     }
+}
+
+.movie {
+    &__thumb {}
+
+    &__meta {}
+
+    &__status {}
+
+    &--hero {}
+
+    &--rank {}
 }
 
 
 .tag-list {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
     li {
         display: inline-block;
-        margin-right: 1rem;
+        margin-left: 1rem;
         margin-bottom: 0.5rem;
     }
     .tag {
@@ -292,5 +336,66 @@ ul {
         font-size: $small-font-size;
         vertical-align: middle;
         color: $silver;
+    }
+}
+
+.hero-movie {
+    display: block;
+    position: relative;
+    color: $orange;
+    
+    &__meta {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 0.25rem 0.5rem;
+        
+        span {
+            display: block;
+        }
+    }
+
+    &__status {
+        @include ribbon();
+    }
+}
+
+.slider {
+    position: relative;
+    @mixin arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border: none;
+        outline: none;
+        padding: 12px 10px;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.85);
+        opacity: 0.8;
+        &:hover {
+            color: $orange;
+            opacity: 1;
+        }
+    }
+    .slick-prev {
+        @include arrow();
+        left: 0;
+    }
+    .slick-next {
+        @include arrow();
+        right: 0;
+    }
+
+    &--movie {
+        .slick-prev {
+            left: 0.25rem;
+        }
+
+        .slick-next {
+            right: 0.25rem;
+        }
     }
 }
