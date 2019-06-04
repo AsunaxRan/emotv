@@ -10586,13 +10586,13 @@ a.text-light:hover, a.text-light:focus {
 }
 
 /* My function */
-.img-34 {
+.ratio-34 {
   position: relative;
   overflow: hidden;
-  padding-top: 133.33%;
+  padding-top: 133.33333%;
 }
 
-.img-34 img {
+.ratio-34 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -10602,33 +10602,13 @@ a.text-light:hover, a.text-light:focus {
      object-fit: cover;
 }
 
-.img-34:hover {
-  opacity: 0.7;
-}
-
-.img-169 {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-.img-169 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.img-52 {
+.ratio-52 {
   position: relative;
   overflow: hidden;
   padding-top: 40%;
 }
 
-.img-52 img {
+.ratio-52 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -10663,21 +10643,16 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  max-width: 100%;
-  overflow: hidden;
-}
-
 .movie {
   display: block;
   position: relative;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .movie__thumb {
   position: relative;
-  padding-top: 133.33%;
   overflow: hidden;
+  padding-top: 133.33333%;
 }
 
 .movie__thumb img {
@@ -10736,6 +10711,24 @@ ul {
   max-width: 100%;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.movie--hero {
+  margin-bottom: 0;
+  color: #fd7e14;
+}
+
+.movie--hero .movie__thumb:hover {
+  opacity: 1;
+}
+
+.movie--hero .movie__meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.25rem 0.5rem;
 }
 
 .tag-list {
@@ -10822,6 +10815,11 @@ ul {
   color: #46e1ff;
 }
 
+#ranking #ranking-tabContent {
+  height: 615px;
+  position: relative;
+}
+
 #ranking #ranking-tabContent .rank-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10837,10 +10835,9 @@ ul {
 }
 
 #ranking #ranking-tabContent .rank-item__thumb .thumb-holder {
-  display: block;
-  width: 100%;
   position: relative;
-  padding-top: 133.33%;
+  overflow: hidden;
+  padding-top: 133.33333%;
 }
 
 #ranking #ranking-tabContent .rank-item__thumb .thumb-holder img {
@@ -10889,65 +10886,16 @@ ul {
   opacity: 0.7;
 }
 
+.actor__thumb img:hover {
+  opacity: 1;
+}
+
 .actor__name {
   display: inline-block;
   width: 100%;
   font-size: 85%;
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.8);
-}
-
-.hero-movie {
-  display: block;
-  position: relative;
-  color: #fd7e14;
-}
-
-.hero-movie__meta {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 0.25rem 0.5rem;
-}
-
-.hero-movie__meta span {
-  display: block;
-}
-
-.hero-movie__status {
-  position: absolute;
-  color: #fff;
-  background: #dc3545;
-  font-size: 75%;
-  text-shadow: 1px 1px 2px #111;
-  left: 1px;
-  top: 8px;
-  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.75);
-  height: 24px;
-  line-height: 24px;
-  max-width: 85%;
-}
-
-.hero-movie__status::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -14px;
-  width: 0;
-  height: 0;
-  border-color: transparent transparent transparent #dc3545;
-  border-style: solid;
-  border-width: 12px 0 12px 14px;
-}
-
-.hero-movie__status span {
-  display: inline-block;
-  max-width: 100%;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .slider {
