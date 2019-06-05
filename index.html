@@ -14,44 +14,111 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="bg-dark mb-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nhập tên phim, diễn viên...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-home"></i>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Thể loại
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Quốc gia
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Trạng thái
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Đang tiến hành</a>
+                            <a class="dropdown-item" href="#">Đã hoàn thành</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Phim lẻ
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Phim bộ
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Hoạt hình</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chiếu rạp</a>
                     </li>
                 </ul>
+
+                <div class="ml-auto">
+                    <a href="#" class="btn btn-dark mr-1">
+                        <i class="far fa-envelope fa-fw"></i>
+                        Liên hệ
+                    </a>
+                    <a href="#" class="btn btn-dark">
+                        <i class="fab fa-facebook-square fa-fw"></i>
+                        Fanpage
+                    </a>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <div class="container">
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-dark" role="alert">
             Quảng Cáo giúp EmoTV duy trì và tồn tại. Vui lòng tắt Adblock để ủng hộ chúng tôi :D
         </div>
 
@@ -231,949 +298,947 @@
                     </div>
                 </div>
 
-                <div class="bg-section p-3">
-                    <section class="main-block">
-                        <div class="main-block__title">
-                            <h2 class="caption mb-3">
-                                <a href="#">
-                                    <span class="text-warning">Phim lẻ mới</span>
+                <section class="main-block bg-section p-3">
+                    <div class="main-block__title">
+                        <h2 class="caption mb-3">
+                            <a href="#">
+                                <span class="text-warning">Phim lẻ mới</span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="main-block__content">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Biệt đội siêu anh hùng 4: Hồi kết">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/7166.jpg"
+                                            alt="Biệt đội siêu anh hùng 4: Hồi kết">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Biệt đội siêu anh hùng 4: Hồi kết
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Avengers 4: Endgame (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            149 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub+Thuyết minh
+                                        </span>
+                                    </div>
                                 </a>
-                            </h2>
-                        </div>
-                        <div class="main-block__content">
-                            <div class="row">
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Biệt đội siêu anh hùng 4: Hồi kết">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/7166.jpg"
-                                                alt="Biệt đội siêu anh hùng 4: Hồi kết">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Biệt đội siêu anh hùng 4: Hồi kết
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Avengers 4: Endgame (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                149 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub+Thuyết minh
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Pokémon: Thám Tử Pikachu">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/8233.jpg"
-                                                alt="Pokémon: Thám Tử Pikachu">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Pokémon: Thám Tử Pikachu
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Pokémon: Detective Pikachu (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                135 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HDRip-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Nhà tù Shawshank">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/301.jpg"
-                                                alt="Nhà tù Shawshank">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Nhà tù Shawshank
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                The Shawshank Redemption (1994)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                142 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Kẻ đánh cắp giấc mơ">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/336.jpg"
-                                                alt="Kẻ đánh cắp giấc mơ">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Kẻ đánh cắp giấc mơ
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Inception (2010)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                148 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Năm tháng vội vã">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/3568.jpg"
-                                                alt="Năm tháng vội vã">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Năm tháng vội vã
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Fleet of Time (2014)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                120 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Giờ cao điểm 3">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/2980.jpg"
-                                                alt="Giờ cao điểm 3">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Giờ cao điểm 3
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Rush Hour 3 (2007)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                130 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/6506.jpg"
-                                                alt="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Jurassic World 2: Fallen Kingdom (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                155 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Chiến binh báo đen">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/5815.jpg"
-                                                alt="Chiến binh báo đen">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Chiến binh báo đen
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Black Panther (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                140 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Đấu trường ảo">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/6746.jpg"
-                                                alt="Đấu trường ảo">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Đấu trường ảo
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Ready Player One (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                112 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Người nhện: Trở về nhà">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/4640.jpg"
-                                                alt="Người nhện: Trở về nhà">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Người nhện: Trở về nhà
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Spider-Man: Homecoming (2017)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                151 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Chú hề ma quái (Phần 2)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/8361.jpg"
-                                                alt="Chú hề ma quái (Phần 2)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Chú hề ma quái (Phần 2)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                It: Chapter Two (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                160 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Vua sư tử">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/8162.jpg"
-                                                alt="Vua sư tử">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Vua sư tử
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                The Lion King (Live-action) (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                172 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Pokémon: Thám Tử Pikachu">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/8233.jpg"
+                                            alt="Pokémon: Thám Tử Pikachu">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Pokémon: Thám Tử Pikachu
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Pokémon: Detective Pikachu (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            135 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HDRip-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Nhà tù Shawshank">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/301.jpg"
+                                            alt="Nhà tù Shawshank">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Nhà tù Shawshank
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            The Shawshank Redemption (1994)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            142 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Kẻ đánh cắp giấc mơ">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/336.jpg"
+                                            alt="Kẻ đánh cắp giấc mơ">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Kẻ đánh cắp giấc mơ
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Inception (2010)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            148 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Năm tháng vội vã">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/3568.jpg"
+                                            alt="Năm tháng vội vã">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Năm tháng vội vã
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Fleet of Time (2014)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            120 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Giờ cao điểm 3">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/2980.jpg"
+                                            alt="Giờ cao điểm 3">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Giờ cao điểm 3
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Rush Hour 3 (2007)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            130 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/6506.jpg"
+                                            alt="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Jurassic World 2: Fallen Kingdom (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            155 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Chiến binh báo đen">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/5815.jpg"
+                                            alt="Chiến binh báo đen">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Chiến binh báo đen
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Black Panther (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            140 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Đấu trường ảo">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/6746.jpg"
+                                            alt="Đấu trường ảo">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Đấu trường ảo
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Ready Player One (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            112 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Người nhện: Trở về nhà">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/4640.jpg"
+                                            alt="Người nhện: Trở về nhà">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Người nhện: Trở về nhà
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Spider-Man: Homecoming (2017)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            151 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Chú hề ma quái (Phần 2)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/8361.jpg"
+                                            alt="Chú hề ma quái (Phần 2)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Chú hề ma quái (Phần 2)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            It: Chapter Two (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            160 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Vua sư tử">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/8162.jpg"
+                                            alt="Vua sư tử">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Vua sư tử
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            The Lion King (Live-action) (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            172 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <section class="main-block mt-4">
-                        <div class="main-block__title">
-                            <h2 class="caption mb-3">
-                                <a href="#">
-                                    <span class="text-warning">Phim bộ mới</span>
+                <section class="main-block bg-section p-3 mt-4">
+                    <div class="main-block__title">
+                        <h2 class="caption mb-3">
+                            <a href="#">
+                                <span class="text-warning">Phim bộ mới</span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="main-block__content">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Thung lũng Silicon (Phần 5)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/6638.jpg"
+                                            alt="Thung lũng Silicon (Phần 5)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Thung lũng Silicon (Phần 5)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Silicon Valley (Season 5) (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            28 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
                                 </a>
-                            </h2>
-                        </div>
-                        <div class="main-block__content">
-                            <div class="row">
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Thung lũng Silicon (Phần 5)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/6638.jpg"
-                                                alt="Thung lũng Silicon (Phần 5)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Thung lũng Silicon (Phần 5)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Silicon Valley (Season 5) (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                28 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Bọ cạp (Phần 4)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/6093.jpg"
-                                                alt="Bọ cạp (Phần 4)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Bọ cạp (Phần 4)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Scorpion (Season 4) (2017)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                30 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Mũi tên xanh (Phần 7)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/7625.jpg"
-                                                alt="Mũi tên xanh (Phần 7)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Mũi tên xanh (Phần 7)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Arrow (Season 7) (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Lời hồi đáp 1988">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/3211.jpg"
-                                                alt="Lời hồi đáp 1988">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Lời hồi đáp 1988
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Reply 1988 (2015)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                60 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Trò Chơi Vương Quyền 8">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/8582.jpg"
-                                                alt="Trò Chơi Vương Quyền 8">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Trò Chơi Vương Quyền 8
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Game of Thrones (Season 8) (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                32 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Vườn sao băng">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/155.jpg"
-                                                alt="Vườn sao băng">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Vườn sao băng
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Boys Over Flowers (2009)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                30 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Tân dòng sông ly biệt">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/7242.jpg"
-                                                alt="Tân dòng sông ly biệt">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Tân dòng sông ly biệt
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Romance In The Rain (2001)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                28 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Hoàn châu cách cách">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/2535.jpg"
-                                                alt="Hoàn châu cách cách">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Hoàn châu cách cách
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                My Fair Princess (1997)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                30 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Bác sĩ trại giam">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/8397.jpg"
-                                                alt="Bác sĩ trại giam">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Bác sĩ trại giam
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Doctor Prisoner (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                25 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Yêu em từ cái nhìn đầu tiên">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/8617.jpg"
-                                                alt="Yêu em từ cái nhìn đầu tiên">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Yêu em từ cái nhìn đầu tiên
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                The Secret Life of My Secretary (2019)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                28 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Bê Bối Kangnam">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/7908.jpg"
-                                                alt="Bê Bối Kangnam">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Bê Bối Kangnam
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Kangnam Scandal (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                32 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Nơi vì sao rơi">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload"
-                                                data-src="assets/imgs/thumb/7539.jpg"
-                                                alt="Nơi vì sao rơi">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Nơi vì sao rơi
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Where Stars Land / Fox Bride Star (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                25 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Bọ cạp (Phần 4)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/6093.jpg"
+                                            alt="Bọ cạp (Phần 4)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Bọ cạp (Phần 4)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Scorpion (Season 4) (2017)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            30 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Mũi tên xanh (Phần 7)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/7625.jpg"
+                                            alt="Mũi tên xanh (Phần 7)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Mũi tên xanh (Phần 7)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Arrow (Season 7) (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Lời hồi đáp 1988">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/3211.jpg"
+                                            alt="Lời hồi đáp 1988">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Lời hồi đáp 1988
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Reply 1988 (2015)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            60 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Trò Chơi Vương Quyền 8">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/8582.jpg"
+                                            alt="Trò Chơi Vương Quyền 8">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Trò Chơi Vương Quyền 8
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Game of Thrones (Season 8) (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            32 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Vườn sao băng">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/155.jpg"
+                                            alt="Vườn sao băng">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Vườn sao băng
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Boys Over Flowers (2009)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            30 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Tân dòng sông ly biệt">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/7242.jpg"
+                                            alt="Tân dòng sông ly biệt">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Tân dòng sông ly biệt
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Romance In The Rain (2001)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            28 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Hoàn châu cách cách">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/2535.jpg"
+                                            alt="Hoàn châu cách cách">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Hoàn châu cách cách
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            My Fair Princess (1997)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            30 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Bác sĩ trại giam">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/8397.jpg"
+                                            alt="Bác sĩ trại giam">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Bác sĩ trại giam
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Doctor Prisoner (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            25 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Yêu em từ cái nhìn đầu tiên">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/8617.jpg"
+                                            alt="Yêu em từ cái nhìn đầu tiên">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Yêu em từ cái nhìn đầu tiên
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            The Secret Life of My Secretary (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            28 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Bê Bối Kangnam">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/7908.jpg"
+                                            alt="Bê Bối Kangnam">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Bê Bối Kangnam
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Kangnam Scandal (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            32 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Nơi vì sao rơi">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload"
+                                            data-src="assets/imgs/thumb/7539.jpg"
+                                            alt="Nơi vì sao rơi">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Nơi vì sao rơi
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Where Stars Land / Fox Bride Star (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            25 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <section class="main-block mt-4">
-                        <div class="main-block__title">
-                            <h2 class="caption mb-3">
-                                <a href="#">
-                                    <span class="text-warning">Phim hoạt hình</span>
+                <section class="main-block bg-section p-3 mt-4">
+                    <div class="main-block__title">
+                        <h2 class="caption mb-3">
+                            <a href="#">
+                                <span class="text-warning">Phim hoạt hình</span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="main-block__content">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Thám tử lừng danh Conan">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/162.jpg"
+                                            alt="Thám tử lừng danh Conan">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Thám tử lừng danh Conan
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Detective Conan / Meitantei Conan / Case Close (1996)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
                                 </a>
-                            </h2>
-                        </div>
-                        <div class="main-block__content">
-                            <div class="row">
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Thám tử lừng danh Conan">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/162.jpg"
-                                                alt="Thám tử lừng danh Conan">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Thám tử lừng danh Conan
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Detective Conan / Meitantei Conan / Case Close (1996)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Pokemon (Phần 2)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/2504.jpg"
-                                                alt="Pokemon (Phần 2)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Pokemon (Phần 2)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Pokémon 2 (Pocket Monsters 2) (1997)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Boruto: Naruto Thế Hệ Kế Tiếp">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/4997.jpg"
-                                                alt="Boruto: Naruto Thế Hệ Kế Tiếp">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Boruto: Naruto Thế Hệ Kế Tiếp
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Boruto: Naruto Next Generations (2017)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Đảo hải tặc">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/665.jpg"
-                                                alt="Đảo hải tặc">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Đảo hải tặc
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                One Piece (1999)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Đại chiến Titan (Phần 3)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/6960.jpg"
-                                                alt="Đại chiến Titan (Phần 3)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Đại chiến Titan (Phần 3)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Attack on Titan (Season 3) (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/7146.jpg"
-                                                alt="Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Dragon Ball Super Movie: Broly (2018)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Tên cậu là gì?">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/3613.jpg"
-                                                alt="Tên cậu là gì?">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Tên cậu là gì?
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Your Name (Kimi no Na wa) (2016)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                107 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Naruto: Đường tới Ninja">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/110.jpg"
-                                                alt="Naruto: Đường tới Ninja">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Naruto: Đường tới Ninja
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Naruto the Movie 6: Road to Ninja (2012)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                70 phút
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Mèo máy Doraemon">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/4496.jpg"
-                                                alt="Mèo máy Doraemon">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Mèo máy Doraemon
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Doraemon New Series (2005)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Tom & Jerry (New Series)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/8611.jpg"
-                                                alt="Tom & Jerry (New Series)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Tom & Jerry (New Series)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                The Tom And Jerry Show (2014)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                22 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Avatar: Huyền Thoại Korra (Phần 4)">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/2784.jpg"
-                                                alt="Avatar: Huyền Thoại Korra (Phần 4)">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Avatar: Huyền Thoại Korra (Phần 4)
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Avatar: The Legend of Korra (Book 4) (2014)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-6 col-sm-4 col-md-3">
-                                    <a class="movie" href="#" title="Giả kim thuật sư">
-                                        <div class="movie__thumb">
-                                            <img class="lazyload" 
-                                                data-src="assets/imgs/thumb/4206.jpg"
-                                                alt="Giả kim thuật sư">
-                                        </div>
-                                        <div class="movie__meta">
-                                            <span class="primary-name text-truncate">
-                                                Giả kim thuật sư
-                                            </span>
-                                            <span class="secondary-name text-truncate small text-silver">
-                                                Fullmetal Alchemist: Brotherhood (2009)
-                                            </span>
-                                            <span class="duration small text-secondary">
-                                                24 phút/tập
-                                            </span>
-                                        </div>
-                                        <div class="movie__status">
-                                            <span class="text-truncate px-1">
-                                                HD-Vietsub
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Pokemon (Phần 2)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/2504.jpg"
+                                            alt="Pokemon (Phần 2)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Pokemon (Phần 2)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Pokémon 2 (Pocket Monsters 2) (1997)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Boruto: Naruto Thế Hệ Kế Tiếp">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/4997.jpg"
+                                            alt="Boruto: Naruto Thế Hệ Kế Tiếp">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Boruto: Naruto Thế Hệ Kế Tiếp
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Boruto: Naruto Next Generations (2017)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Đảo hải tặc">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/665.jpg"
+                                            alt="Đảo hải tặc">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Đảo hải tặc
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            One Piece (1999)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Đại chiến Titan (Phần 3)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/6960.jpg"
+                                            alt="Đại chiến Titan (Phần 3)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Đại chiến Titan (Phần 3)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Attack on Titan (Season 3) (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/7146.jpg"
+                                            alt="Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Dragon Ball Super Movie: Broly (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Tên cậu là gì?">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/3613.jpg"
+                                            alt="Tên cậu là gì?">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Tên cậu là gì?
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Your Name (Kimi no Na wa) (2016)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            107 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Naruto: Đường tới Ninja">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/110.jpg"
+                                            alt="Naruto: Đường tới Ninja">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Naruto: Đường tới Ninja
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Naruto the Movie 6: Road to Ninja (2012)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            70 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Mèo máy Doraemon">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/4496.jpg"
+                                            alt="Mèo máy Doraemon">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Mèo máy Doraemon
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Doraemon New Series (2005)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Tom & Jerry (New Series)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/8611.jpg"
+                                            alt="Tom & Jerry (New Series)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Tom & Jerry (New Series)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            The Tom And Jerry Show (2014)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            22 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Avatar: Huyền Thoại Korra (Phần 4)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/2784.jpg"
+                                            alt="Avatar: Huyền Thoại Korra (Phần 4)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Avatar: Huyền Thoại Korra (Phần 4)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Avatar: The Legend of Korra (Book 4) (2014)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="#" title="Giả kim thuật sư">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" 
+                                            data-src="assets/imgs/thumb/4206.jpg"
+                                            alt="Giả kim thuật sư">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Giả kim thuật sư
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Fullmetal Alchemist: Brotherhood (2009)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            24 phút/tập
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
     
             <aside class="col-lg-4 mt-4 mt-lg-0" id="sidebar">
@@ -1665,81 +1730,10 @@
     </div>
 
     <footer class="bg-section mt-4 py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-logo"></div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3">
-                            <h3 class="h5">Title sdgsdgds</h3>
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="text-light" href="#">4</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <div class="footer-logo"></div>
+            <p></p>
+            Power by <a href="nvneagle.com">nvneagle.com</a>
         </div>
     </footer>
 
