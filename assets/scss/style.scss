@@ -1,6 +1,7 @@
 /* My variables */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
+$black: #000;
 $black-12: #121212;
 $black-19: #191919;
 $black-25: #252525;
@@ -8,6 +9,7 @@ $black-555: #555;
 $black-111: #111;
 $black-333: #333;
 $silver: rgba(#fff, 0.8);
+$white: #fff;
 
 /* Custom Bootstrap variables */
 $h2-font-size:          1.5rem;
@@ -32,8 +34,9 @@ $pagination-disabled-bg: $black-333;
 $pagination-disabled-border-color: $black-333;
 
 /*Form*/
-$input-bg: $black-12;
-// $input-disabled-bg: $gray-200;
+$input-bg: $black;
+// $input-border-color: $black-555;
+// $input-focus-border-color: $cyan;
 
 // $input-color: $gray-700;
 $input-border-color: $black-12;
@@ -47,6 +50,13 @@ $input-border-color: $black-12;
 
 // $input-placeholder-color: $gray-600;
 // $input-plaintext-color: $body-color;
+
+/*Dropdowns*/
+$dropdown-bg: $black-19;
+$dropdown-border-radius: 0;
+$dropdown-link-color: $silver;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $black-555;
 
 @import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
 
@@ -70,12 +80,23 @@ a.text-light {
 }
 
 /* My utility class */
-.bg-section {
+.bg-19 {
     background-color: $black-19;
+}
+
+.bg-25 {
+    background-color: $black-25;
 }
 
 .text-silver {
     color: $silver;
+}
+
+.center-200 {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* My function */
@@ -215,11 +236,14 @@ ul {
 .tag-list {
     padding-left: 0.5rem;
     padding-right: 1rem;
+    margin-bottom: 0;
+
     li {
         display: inline-block;
         margin-left: 1rem;
         margin-bottom: 0.5rem;
     }
+
     .tag {
         position: relative;
         display: inline-block;
@@ -331,6 +355,7 @@ ul {
 .actor {
     display: block;
     margin-bottom: 0.5rem;
+
     &__thumb {
         border: 1px solid $black-333;
         border-radius: $border-radius;
@@ -342,6 +367,7 @@ ul {
             }
         }
     }
+
     &__name {
         display: inline-block;
         width: 100%;
@@ -353,6 +379,7 @@ ul {
 
 .slider {
     position: relative;
+
     @mixin arrow {
         position: absolute;
         top: 50%;
@@ -364,6 +391,7 @@ ul {
         color: $white;
         background-color: rgba(0, 0, 0, 0.85);
         opacity: 0.8;
+
         &:hover {
             color: $orange;
             opacity: 1;
@@ -385,6 +413,83 @@ ul {
 
         .slick-next {
             right: 0.25rem;
+        }
+    }
+}
+
+header {
+    .header-content {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            flex-wrap: nowrap;
+        }
+
+        .brand {
+            display: inline-block;
+            width: 40vw;
+            max-width: 200px;
+        }
+
+        .nav-toggler {
+            display: inline-block;
+            color: $silver;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .search {
+            flex-basis: 100%;
+            margin-top: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                flex-basis: auto;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.search {
+    .search-holder {
+        position: relative;
+    
+        input {
+            background-color: $black;
+
+            @include media-breakpoint-up(lg) {
+                width: 290px;
+            }
+        }
+    
+        button {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: transparent;
+            color: $silver;
+            border: transparent;
+            outline: none;
+    
+            &:hover {
+                color: $cyan;
+            }
         }
     }
 }
