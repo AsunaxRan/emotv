@@ -36,7 +36,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-25">
             <div class="container">
-                <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="collapse navbar-collapse p-2 px-lg-0" id="navbarContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item d-none d-lg-block active">
                             <a class="nav-link" href="#">
@@ -104,7 +104,7 @@
                     </ul>
 
                     <div class="ml-auto">
-                        <a href="#" class="btn btn-dark mr-1">
+                        <a href="mailto:admin@emotv.com" class="btn btn-dark mr-1">
                             <i class="far fa-envelope fa-fw"></i>
                             Liên hệ
                         </a>
@@ -1252,17 +1252,13 @@
                         </h2>
                     </div>
                     <div class="side-block__content">
-                        <div class="nav px-3 py-2" id="ranking-tab" role="tablist">
-                            <a class="nav-item active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                                role="tab" aria-controls="nav-home" aria-selected="true">Tuần</a>
-                            <a class="nav-item" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                                role="tab" aria-controls="nav-profile" aria-selected="false">Tháng</a>
-                            <a class="nav-item" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                                role="tab" aria-controls="nav-contact" aria-selected="false">Năm</a>
+                        <div class="nav px-3 py-2" id="ranking-tab">
+                            <a class="nav-item active" id="nav-week-tab" data-toggle="tab" href="#nav-week">Tuần</a>
+                            <a class="nav-item" id="nav-month-tab" data-toggle="tab" href="#nav-month">Tháng</a>
+                            <a class="nav-item" id="nav-year-tab" data-toggle="tab" href="#nav-year">Năm</a>
                         </div>
                         <div class="tab-content" id="ranking-tabContent">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                aria-labelledby="nav-home-tab">
+                            <div class="tab-pane fade show active" id="nav-week">
                                 <a class="rank-item" 
                                     href="#" 
                                     title="Biệt đội siêu anh hùng 4: Hồi kết">
@@ -1484,15 +1480,19 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div class="text-center py-3">
+                            <div class="tab-pane fade" id="nav-month">
+                                <div class="text-center py-3 rank-loading">
                                     <div class="spinner-border text-info" role="status">
                                         <span class="sr-only">Loading...</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-
+                            <div class="tab-pane fade" id="nav-year">
+                                <div class="text-center py-3 rank-loading">
+                                    <div class="spinner-border text-info" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1565,7 +1565,7 @@
                                 <a class="tag" href="#">Conan</a>
                             </li>
                             <li>
-                                <a class="tag" href="#">Sun</a>
+                                <a class="tag" href="#">Thanh xuân</a>
                             </li>
                         </ul>
                     </div>
@@ -1745,7 +1745,7 @@
     </section>
 
     <footer class="text-center py-2">
-        Power by <a href="nvneagle.com">nvneagle.com</a>
+        Power by <a href="https://nvneagle.com">nvneagle.com</a>
     </footer>
 
     <script src="assets/vendor/jquery-3.4.1.min.js"></script>
@@ -1759,7 +1759,7 @@
             lazyload();
 
             $('.slider--banner').slick({
-                autoPlay: true,
+                autoplay: true,
                 prevArrow: 
                     `<button type="button" class="slick-prev">
                         <i class="fas fa-chevron-left"></i>
@@ -1771,7 +1771,7 @@
             });
 
             $('.slider--movie').slick({
-                autoPlay: true,
+                autoplay: true,
                 prevArrow:
                     `<button type="button" class="slick-prev">
                         <i class="fas fa-chevron-left"></i>
