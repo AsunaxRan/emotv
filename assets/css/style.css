@@ -4,6 +4,8 @@
 /*Form*/
 /*Dropdowns*/
 /*Navbar*/
+/*Alerts*/
+/*Breadcrumbs*/
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -5132,8 +5134,8 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
+  background-color: #191919;
+  border-radius: 0;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -5143,7 +5145,7 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #6c757d;
+  color: rgba(255, 255, 255, 0.8);
   content: "/";
 }
 
@@ -5156,7 +5158,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .pagination {
@@ -5446,7 +5448,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .alert-heading {
@@ -10581,6 +10583,10 @@ a.text-light:hover, a.text-light:focus {
 }
 
 /* My utility class */
+.bg-12 {
+  background-color: #121212;
+}
+
 .bg-19 {
   background-color: #191919;
 }
@@ -10593,11 +10599,19 @@ a.text-light:hover, a.text-light:focus {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.text-platinum {
+  color: #bbb;
+}
+
 .center-200 {
   display: block;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.scroll {
+  position: relative;
 }
 
 /* My function */
@@ -10656,6 +10670,8 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .movie {
@@ -10968,7 +10984,7 @@ ul {
   right: 0.25rem;
 }
 
-header .header-content {
+header .head {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: -webkit-box;
@@ -10985,19 +11001,19 @@ header .header-content {
 }
 
 @media (min-width: 992px) {
-  header .header-content {
+  header .head {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 
-header .header-content .brand {
+header .head .brand {
   display: inline-block;
   width: 40vw;
   max-width: 200px;
 }
 
-header .header-content .nav-toggler {
+header .head .nav-toggler {
   display: inline-block;
   color: rgba(255, 255, 255, 0.8);
   background-color: transparent;
@@ -11009,19 +11025,19 @@ header .header-content .nav-toggler {
 }
 
 @media (min-width: 992px) {
-  header .header-content .nav-toggler {
+  header .head .nav-toggler {
     display: none;
   }
 }
 
-header .header-content .search {
+header .head .search {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-top: 1rem;
 }
 
 @media (min-width: 992px) {
-  header .header-content .search {
+  header .head .search {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     margin-top: 0;
