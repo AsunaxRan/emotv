@@ -2,15 +2,16 @@
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
 $font-icon: 'Font Awesome 5 Free';
+$fa-font-path: "../vendor/fontawesome-free-5.8.2-web/webfonts";
 $black: #000;
 $black-12: #121212;
 $black-19: #191919;
 $black-25: #252525;
-$black-555: #555;
 $black-111: #111;
 $black-333: #333;
-$silver: rgba(#fff, 0.8);
+$black-555: #555;
 $white: #fff;
+$silver: rgba(#fff, 0.8);
 $platinum: #bbb;
 
 /* Custom Bootstrap variables */
@@ -71,6 +72,12 @@ $breadcrumb-active-color: $silver;
 $breadcrumb-border-radius: 0;
 
 @import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/fontawesome.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/regular.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/solid.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/brands.scss';
+@import 'vendor/perfect-scrollbar';
+@import 'vendor/slick';
 
 /* Custom Bootstrap utility class */
 a.text-info {
@@ -117,10 +124,6 @@ a.text-light {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.scroll {
-    position: relative;
 }
 
 /* My function */
@@ -444,6 +447,8 @@ ul {
 }
 
 header {
+    margin-bottom: 1.5rem;
+
     .head {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -523,13 +528,14 @@ header {
 .rating {
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
-    // border: 1px solid $black-25; 
+    background-color: $black-12;
 
     &__stars {
         $star-on: 900;
         $star-off: 400;
         $star-color: $yellow;
         $star-size: 1.2em;
+        $star-code: "\f005";
 
         display: flex;
         flex-direction: row-reverse;
@@ -546,7 +552,7 @@ header {
 
             &::before {
                 font-family: $font-icon;
-                content: "\f005";
+                content: $star-code;
             }
         }
 
@@ -554,9 +560,9 @@ header {
             display: none;
         }
 
-        input:checked~label:before,
-        &:not(:checked)>label:hover:before,
-        &:not(:checked)>label:hover~label:before {
+        input:checked ~ label:before,
+        &:not(:checked) > label:hover:before,
+        &:not(:checked) > label:hover ~ label:before {
             font-weight: $star-on;
         }
     }

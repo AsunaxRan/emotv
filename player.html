@@ -13,9 +13,6 @@
 
     <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap">
-    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.8.2-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/vendor/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar-master/css/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,7 +21,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3">
     </script>
 
-    <header class="mb-4">
+    <header>
         <div class="container">
             <div class="head">
                 <a href="index.html" class="brand">
@@ -136,7 +133,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
                     <li class="breadcrumb-item"><a href="search.html">Phim lẻ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Thung lũng slicon - Phần 5</li>
+                    <li class="breadcrumb-item active">Thung lũng slicon - Phần 5</li>
                 </ol>
             </nav>
         </div>
@@ -144,17 +141,20 @@
         <div class="row">
             <div class="col-lg-8" id="main">
                 <section class="player bg-19 p-3">
-                    <video src="assets/videos/snk.mp4" controls style="width: 100%; height: auto;"></video>
-                    <div class="servers mt-1">
+                    <div id="video-player"></div>
+                    
+                    <div class="servers mt-2">
                         <button class="btn btn-dark btn-sm mr-1">Server #1</button>
                         <button class="btn btn-dark btn-sm mr-1">Server #2</button>
                     </div>
+
                     <h1 class="h2 text-capitalize text-silver mt-3">Thung lũng silicon - Phần 5</h1>
                     <h2 class="h6 text-capitalize">Silicon Valley - Part 5 (2019)</h2>
-                    <div class="fb-like float-lg-right mr-lg-3" data-href="http://127.0.0.1:5500/player.html" data-width=""
+                    <div class="fb-like float-lg-right mr-lg-3 mt-lg-2" data-href="http://127.0.0.1:5500/player.html" data-width=""
                         data-layout="button_count" data-action="like" data-size="small" data-show-faces="false"
                         data-share="true"></div>
-                    <div class="rating bg-12">
+
+                    <div class="rating">
                         <div class="rating__title text-warning">ĐÁNH GIÁ</div>
                         <div class="rating__stars">
                             <input type="radio" id="star10" name="rating" value="10" />
@@ -183,6 +183,7 @@
                             <span id="rating-count">346</span> votes)
                         </div>
                     </div>
+
                     <div class="episodes">
                         <div class="episode-block">
                             <span class="episode-block__title">
@@ -225,14 +226,16 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="tags mt-4">
                         Tags:
                         <div class="d-inline-block">
-                            <a class="d-inline-block" href="search.html">Năm tháng vội vã</a>,
-                            <a class="d-inline-block" href="search.html">Fleet of time</a>,
-                            <a class="d-inline-block" href="search.html">Thanh xuân</a>
+                            <a class="d-inline-block" href="search.html">Silicon valley</a>,
+                            <a class="d-inline-block" href="search.html">IT</a>,
+                            <a class="d-inline-block" href="search.html">Pied Piper</a>
                         </div>
                     </div>
+
                     <div class="view-detail text-center mt-3 border-top border-dark">
                         <a href="detail.html" class="d-inline-block bg-dark text-light py-2 px-3">
                             Xem giới thiệu
@@ -249,7 +252,9 @@
                 <section class="main-block bg-19 p-3 mt-4">
                     <div class="main-block__title">
                         <h2 class="caption mb-3">
-                            <span class="text-warning">Phim liên quan</span>
+                            <a href="">
+                                <span class="text-warning">CÓ THỂ BẠN MUỐN XEM</span>
+                            </a>
                         </h2>
                     </div>
                     <div class="main-block__content">
@@ -280,6 +285,30 @@
                                 </a>
                             </div>
                             <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Pokémon: Thám Tử Pikachu">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/8233.jpg" alt="Pokémon: Thám Tử Pikachu">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Pokémon: Thám Tử Pikachu
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Pokémon: Detective Pikachu (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            135 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HDRip-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
                                 <a class="movie" href="player.html" title="Nhà tù Shawshank">
                                     <div class="movie__thumb">
                                         <img class="lazyload" src="assets/imgs/placeholder.jpg"
@@ -304,6 +333,54 @@
                                 </a>
                             </div>
                             <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Kẻ đánh cắp giấc mơ">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/336.jpg" alt="Kẻ đánh cắp giấc mơ">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Kẻ đánh cắp giấc mơ
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Inception (2010)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            148 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Năm tháng vội vã">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/3568.jpg" alt="Năm tháng vội vã">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Năm tháng vội vã
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Fleet of Time (2014)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            120 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
                                 <a class="movie" href="player.html" title="Giờ cao điểm 3">
                                     <div class="movie__thumb">
                                         <img class="lazyload" src="assets/imgs/placeholder.jpg"
@@ -318,6 +395,151 @@
                                         </span>
                                         <span class="duration small text-secondary">
                                             130 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/6506.jpg"
+                                            alt="Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Thế Giới Khủng Long 2: Vương Quốc Sụp Đổ
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Jurassic World 2: Fallen Kingdom (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            155 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Chiến binh báo đen">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/5815.jpg" alt="Chiến binh báo đen">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Chiến binh báo đen
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Black Panther (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            140 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Đấu trường ảo">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/6746.jpg" alt="Đấu trường ảo">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Đấu trường ảo
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Ready Player One (2018)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            112 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Người nhện: Trở về nhà">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/4640.jpg" alt="Người nhện: Trở về nhà">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Người nhện: Trở về nhà
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            Spider-Man: Homecoming (2017)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            151 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Chú hề ma quái (Phần 2)">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/8361.jpg" alt="Chú hề ma quái (Phần 2)">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Chú hề ma quái (Phần 2)
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            It: Chapter Two (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            160 phút
+                                        </span>
+                                    </div>
+                                    <div class="movie__status">
+                                        <span class="text-truncate px-1">
+                                            HD-Vietsub
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <a class="movie" href="player.html" title="Vua sư tử">
+                                    <div class="movie__thumb">
+                                        <img class="lazyload" src="assets/imgs/placeholder.jpg"
+                                            data-src="assets/imgs/thumb/8162.jpg" alt="Vua sư tử">
+                                    </div>
+                                    <div class="movie__meta">
+                                        <span class="primary-name text-truncate">
+                                            Vua sư tử
+                                        </span>
+                                        <span class="secondary-name text-truncate small text-silver">
+                                            The Lion King (Live-action) (2019)
+                                        </span>
+                                        <span class="duration small text-secondary">
+                                            172 phút
                                         </span>
                                     </div>
                                     <div class="movie__status">
@@ -823,6 +1045,10 @@
             lazyload();
 
             var ps = new PerfectScrollbar('#ranking-tabContent');
+
+            jwplayer("video-player").setup({
+                "playlist": "https://cdn.jwplayer.com/v2/media/4fEt0PHT"
+            });
         });
     </script>
 </body>
