@@ -1,6 +1,7 @@
 /* My variables */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Roboto Condensed', sans-serif;
+$font-icon: 'Font Awesome 5 Free';
 $black: #000;
 $black-12: #121212;
 $black-19: #191919;
@@ -13,16 +14,26 @@ $white: #fff;
 $platinum: #bbb;
 
 /* Custom Bootstrap variables */
+
+/*Typography*/
 $h2-font-size:          1.5rem;
 $small-font-size:       85%;
+
+/*Grid columns*/
 $grid-gutter-width:     1rem;
+
+/*Color system*/
+$yellow:               #dacb46;
+$cyan:                 #46e1ff;
+
+/*Body*/
 $body-bg:               $black-12;
-$yellow:                #dacb46;
-$cyan:                  #46e1ff;
+$body-color:            $platinum;
+
+/*Links*/
 $link-color:            $cyan;
 $link-hover-color:      $yellow;
 $link-hover-decoration: none;
-$body-color:            $platinum;
 
 /*Pagination*/
 $pagination-bg: $black-25;
@@ -52,9 +63,6 @@ $navbar-padding-x: 0;
 
 /*Alerts*/
 $alert-border-radius: 0;
-// $alert-bg-level: -6 !default;
-// $alert-border-level: 0 !default;
-// $alert-color-level: 10 !default;
 
 /*Breadcrumbs*/
 $breadcrumb-bg: $black-19;
@@ -507,6 +515,89 @@ header {
     
             &:hover {
                 color: $cyan;
+            }
+        }
+    }
+}
+
+.rating {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    // border: 1px solid $black-25; 
+
+    &__stars {
+        $star-on: 900;
+        $star-off: 400;
+        $star-color: $yellow;
+        $star-size: 1.2em;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+
+        label {
+            cursor: pointer;
+            margin-bottom: 0;
+            font-size: $star-size;
+            color: $star-color;
+            font-weight: $star-off;
+
+            &::before {
+                font-family: $font-icon;
+                content: "\f005";
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked~label:before,
+        &:not(:checked)>label:hover:before,
+        &:not(:checked)>label:hover~label:before {
+            font-weight: $star-on;
+        }
+    }
+}
+
+.episodes {
+    .episode-block {
+        margin-top: 0.5rem;
+
+        &__title {
+            text-transform: capitalize;
+            color: $platinum;
+            font-weight: bold;
+        }
+
+        &__list {
+            margin-top: 0.5rem;
+            a {
+                display: inline-block;
+                text-align: center;
+                min-width: 32px;
+                height: 32px;
+                line-height: 32px;
+                background-color: $black-333;
+                color: $platinum;
+                border: 1px solid $black-333;
+                border-radius: 2px;
+                margin-right: 0.25rem;
+                margin-bottom: 0.5rem;
+
+                @include hover-focus {
+                    background-color: $red;
+                    border-color: $red;
+                    color: $silver;
+                }
+
+                &.active {
+                    background-color: $red;
+                    border-color: $red;
+                    color: $silver;
+                }
             }
         }
     }

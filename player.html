@@ -35,7 +35,7 @@
                 </button>
                 <form action="#" method="GET" class="search">
                     <div class="search-holder">
-                        <input type="text" class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control" placeholder="Search..." />
                         <button>
                             <i class="fas fa-search"></i>
                         </button>
@@ -136,7 +136,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
                     <li class="breadcrumb-item"><a href="search.html">Phim lẻ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Năm tháng vội vã</li>
+                    <li class="breadcrumb-item active" aria-current="page">Thung lũng slicon - Phần 5</li>
                 </ol>
             </nav>
         </div>
@@ -144,13 +144,101 @@
         <div class="row">
             <div class="col-lg-8" id="main">
                 <section class="player bg-19 p-3">
-                    <video src=""></video>
+                    <video src="assets/videos/snk.mp4" controls style="width: 100%; height: auto;"></video>
+                    <div class="servers mt-1">
+                        <button class="btn btn-dark btn-sm mr-1">Server #1</button>
+                        <button class="btn btn-dark btn-sm mr-1">Server #2</button>
+                    </div>
+                    <h1 class="h2 text-capitalize text-silver mt-3">Thung lũng silicon - Phần 5</h1>
+                    <h2 class="h6 text-capitalize">Silicon Valley - Part 5 (2019)</h2>
+                    <div class="fb-like float-lg-right mr-lg-3" data-href="http://127.0.0.1:5500/player.html" data-width=""
+                        data-layout="button_count" data-action="like" data-size="small" data-show-faces="false"
+                        data-share="true"></div>
+                    <div class="rating bg-12">
+                        <div class="rating__title text-warning">ĐÁNH GIÁ</div>
+                        <div class="rating__stars">
+                            <input type="radio" id="star10" name="rating" value="10" />
+                            <label for="star10"></label>
+                            <input type="radio" id="star9" name="rating" value="9" checked />
+                            <label for="star9"></label>
+                            <input type="radio" id="star8" name="rating" value="8" />
+                            <label for="star8"></label>
+                            <input type="radio" id="star7" name="rating" value="7" />
+                            <label for="star7"></label>
+                            <input type="radio" id="star6" name="rating" value="6" />
+                            <label for="star6"></label>
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1"></label>
+                        </div>
+                        <div class="rating__statistics">
+                            (<span id="rating-point">8.67</span> /
+                            <span id="rating-count">346</span> votes)
+                        </div>
+                    </div>
+                    <div class="episodes">
+                        <div class="episode-block">
+                            <span class="episode-block__title">Vietsub</span>
+                            <div class="episode-block__list">
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#">11</a>
+                                <a href="#">12</a>
+                            </div>
+                        </div>
+                        <div class="episode-block">
+                            <span class="episode-block__title">Thuyết minh</span>
+                            <div class="episode-block__list">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#">11</a>
+                                <a href="#">12</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags mt-4">
+                        Tags:
+                        <div class="d-inline-block">
+                            <a class="d-inline-block" href="search.html">Năm tháng vội vã</a>,
+                            <a class="d-inline-block" href="search.html">Fleet of time</a>,
+                            <a class="d-inline-block" href="search.html">Thanh xuân</a>
+                        </div>
+                    </div>
+                    <div class="view-detail text-center mt-3 border-top border-dark">
+                        <a href="detail.html" class="d-inline-block bg-dark text-light py-2 px-3">
+                            Xem giới thiệu
+                            <i class="fas fa-external-link-alt fa-fw"></i>
+                        </a>
+                    </div>
                 </section>
 
-                <section class="comment bg-19 p-3 mt-4">
+                <div class="comment bg-19 p-3 mt-4">
                     <div class="fb-comments" data-href="http://127.0.0.1:5500/player.html" data-width="100%"
                         data-numposts="5" data-colorscheme="dark"></div>
-                </section>
+                </div>
 
                 <section class="main-block bg-19 p-3 mt-4">
                     <div class="main-block__title">
@@ -697,7 +785,7 @@
     </div>
 
     <!-- Giới thiệu website -->
-    <section class="bg-19 mt-4 py-5">
+    <div class="site-intro bg-19 mt-4 py-5">
         <div class="container text-center">
             <div class="center-200 mb-3">
                 <img src="assets/imgs/logo.png" alt="emotv.com" class="img-fluid">
@@ -711,7 +799,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer class="text-center py-2">
         Power by <a href="https://nvneagle.com">nvneagle.com</a>
