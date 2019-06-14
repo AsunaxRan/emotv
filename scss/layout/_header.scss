@@ -1,0 +1,47 @@
+header {
+    margin-bottom: 1.5rem;
+
+    .head {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            flex-wrap: nowrap;
+        }
+
+        .brand {
+            display: inline-block;
+            width: 40vw;
+            max-width: 200px;
+        }
+
+        .nav-toggler {
+            display: inline-block;
+            color: $silver;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        .search {
+            flex-basis: 100%;
+            margin-top: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                flex-basis: auto;
+                margin-top: 0;
+            }
+        }
+    }
+}

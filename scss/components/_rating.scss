@@ -1,0 +1,46 @@
+.rating {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background-color: $black-12;
+
+    &__title {
+        color: $yellow;
+    }
+
+    &__stars {
+        $star-on: 900;
+        $star-off: 400;
+        $star-color: $yellow;
+        $star-size: 1.2em;
+        $star-code: "\f005";
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+
+        label {
+            cursor: pointer;
+            margin-bottom: 0;
+            font-size: $star-size;
+            color: $star-color;
+            font-weight: $star-off;
+
+            &::before {
+                font-family: $font-icon;
+                content: $star-code;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked~label:before,
+        &:not(:checked)>label:hover:before,
+        &:not(:checked)>label:hover~label:before {
+            font-weight: $star-on;
+        }
+    }
+}

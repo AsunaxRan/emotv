@@ -1,0 +1,36 @@
+.servers {
+    margin-top: 0.5rem;
+
+    button {
+        margin-right: 0.25rem;
+    }
+}
+
+.view-detail {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid $dark;
+
+    a {
+        display: inline-block;
+        background-color: $dark;
+        color: $light;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            color: $silver;
+        }
+    }
+}
+
+.tags-text {
+    margin-top: 1.5rem;
+
+    .tags-wrapper {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src:
+        local('Roboto'),
+        url('#{$font-path}/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src:
+        local('Roboto Condensed'),
+        url('#{$font-path}/RobotoCondensed-Regular.ttf') format('truetype');
+}

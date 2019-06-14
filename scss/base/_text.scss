@@ -1,0 +1,25 @@
+a.text-info {
+    @include hover-focus {
+        color: $yellow !important;
+    }
+}
+
+a.text-warning {
+    @include hover-focus {
+        color: $cyan !important;
+    }
+}
+
+a.text-light {
+    @include hover-focus {
+        color: $yellow !important;
+    }
+}
+
+.text-silver {
+    color: $silver;
+}
+
+.text-platinum {
+    color: $platinum;
+}

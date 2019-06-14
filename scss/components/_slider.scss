@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+
+    @mixin arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border: none;
+        outline: none;
+        padding: 12px 10px;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.85);
+        opacity: 0.8;
+
+        &:hover {
+            color: $orange;
+            opacity: 1;
+        }
+    }
+
+    .slick-prev {
+        @include arrow();
+        left: 0;
+    }
+
+    .slick-next {
+        @include arrow();
+        right: 0;
+    }
+
+    &--movie {
+        .slick-prev {
+            left: 0.25rem;
+        }
+
+        .slick-next {
+            right: 0.25rem;
+        }
+    }
+}

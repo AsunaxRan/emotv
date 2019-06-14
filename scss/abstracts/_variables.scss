@@ -1,0 +1,73 @@
+/* My variables */
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Roboto Condensed', sans-serif;
+$font-icon: 'Font Awesome 5 Free';
+$fa-font-path: "../vendor/fontawesome-free-5.8.2-web/webfonts";
+$font-path: '../fonts';
+$black: #000;
+$black-12: #121212;
+$black-19: #191919;
+$black-25: #252525;
+$black-111: #111;
+$black-333: #333;
+$black-555: #555;
+$white: #fff;
+$silver: rgba(#fff, 0.8);
+$platinum: #bbb;
+
+/* Custom Bootstrap variables */
+
+/*Typography*/
+$h2-font-size: 1.5rem;
+$small-font-size: 85%;
+
+/*Grid columns*/
+$grid-gutter-width: 1rem;
+
+/*Color system*/
+$yellow: #dacb46;
+$cyan: #46e1ff;
+
+/*Body*/
+$body-bg: $black-12;
+$body-color: $platinum;
+
+/*Links*/
+$link-color: $cyan;
+$link-hover-color: $yellow;
+$link-hover-decoration: none;
+
+/*Pagination*/
+$pagination-bg: $black-25;
+$pagination-border-color: $black-25;
+$pagination-hover-bg: $black-19;
+$pagination-hover-border-color: $black-19;
+$component-active-bg: $black-19;
+$pagination-disabled-color: $black-555;
+$pagination-disabled-bg: $black-333;
+$pagination-disabled-border-color: $black-333;
+
+/*Form*/
+$input-bg: $black;
+$input-color: $silver;
+$input-border-color: $black-12;
+
+/*Dropdowns*/
+$dropdown-bg: $black-19;
+$dropdown-border-radius: 0;
+$dropdown-link-color: $silver;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $black-555;
+
+/*Navbar*/
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+/*Alerts*/
+$alert-border-radius: 0;
+
+/*Breadcrumbs*/
+$breadcrumb-bg: $black-19;
+$breadcrumb-divider-color: $silver;
+$breadcrumb-active-color: $silver;
+$breadcrumb-border-radius: 0;

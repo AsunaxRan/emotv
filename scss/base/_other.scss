@@ -1,0 +1,14 @@
+.center-200 {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ratio-34 {
+    @include make-image-holder(3, 4);
+}
+
+.ratio-52 {
+    @include make-image-holder(5, 2);
+}

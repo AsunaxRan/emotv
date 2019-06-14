@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+@import 'abstracts/function';
+@import 'abstracts/mixin';
+
+@import '../vendor/bootstrap-4.3.1/scss/bootstrap.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/fontawesome.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/regular.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/solid.scss';
+@import '../vendor/fontawesome-free-5.8.2-web/scss/brands.scss';
+@import 'vendor/perfect-scrollbar';
+@import 'vendor/slick';
+
+@import 'base/golbal';
+@import 'base/background';
+@import 'base/text';
+@import 'base/other';
+
+@import 'components/fonts';
+@import 'components/slider';
+@import 'components/rating';
+@import 'components/ranking';
+@import 'components/tag-list';
+@import 'components/search';
+@import 'components/episodes';
+@import 'components/movie';
+
+@import 'layout/grid';
+@import 'layout/header';
+
+@import 'pages/actor';
+@import 'pages/player';

@@ -1,0 +1,41 @@
+.episodes {
+    .episode-block {
+        margin-top: 0.5rem;
+
+        &__title {
+            text-transform: capitalize;
+            color: $platinum;
+            font-weight: bold;
+        }
+
+        &__list {
+            margin-top: 0.5rem;
+
+            a {
+                display: inline-block;
+                text-align: center;
+                min-width: 32px;
+                height: 32px;
+                line-height: 32px;
+                background-color: $black-333;
+                color: $platinum;
+                border: 1px solid $black-333;
+                border-radius: 2px;
+                margin-right: 0.25rem;
+                margin-bottom: 0.5rem;
+
+                @include hover-focus {
+                    background-color: $red;
+                    border-color: $red;
+                    color: $silver;
+                }
+
+                &.active {
+                    background-color: $red;
+                    border-color: $red;
+                    color: $silver;
+                }
+            }
+        }
+    }
+}
