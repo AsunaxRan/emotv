@@ -16547,6 +16547,16 @@ readers do not read off random characters that represent icons */
   display: none;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -16632,16 +16642,6 @@ a.text-light:hover, a.text-light:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
 }
 
 .slider {
@@ -17045,6 +17045,13 @@ a.text-light:hover, a.text-light:focus {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 0.25rem 0.5rem;
+}
+
+.site-alert {
+  background-color: #252525;
+  border: 1px solid #dacb46;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .small-gutter {

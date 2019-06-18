@@ -122,7 +122,7 @@
     <!-- Nội dung chính -->
     <div class="container">
         <!-- Thông báo của website -->
-        <div class="bg-25 border border-warning p-2 mb-4">
+        <div class="site-alert">
             Do thiếu hụt kinh phí để duy trì băng thông lớn nên nhiều phim sẽ không có chất lượng HD vào 1 số giờ cao
             điềm trong ngày. Emotv sẽ cố gắng đưa chất lượng HD trở lại nhanh nhất.<br>
             Tính năng download tạm thời có thể không khả dụng vào 1 số thời điểm, Emotv đang bổ sung máy chủ cho tính
@@ -1827,6 +1827,8 @@
     <!-- <script src="js/main.js"></script> -->
     <script>
         $(document).ready(function() {
+            const ps = new PerfectScrollbar('#ranking-tabContent');
+
             lazyload();
 
             $('.slider--banner').slick({
@@ -1878,7 +1880,7 @@
                 ]
             });
         
-            var ps = new PerfectScrollbar('#ranking-tabContent');
+            
         });
     </script>
 </body>

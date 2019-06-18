@@ -10,12 +10,12 @@
 @import 'vendor/perfect-scrollbar';
 @import 'vendor/slick';
 
+@import 'base/fonts';
 @import 'base/golbal';
 @import 'base/background';
 @import 'base/text';
 @import 'base/other';
 
-@import 'components/fonts';
 @import 'components/slider';
 @import 'components/rating';
 @import 'components/ranking';
@@ -23,6 +23,7 @@
 @import 'components/search';
 @import 'components/episodes';
 @import 'components/movie';
+@import 'components/site-alert';
 
 @import 'layout/grid';
 @import 'layout/header';
