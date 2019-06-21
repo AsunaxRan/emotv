@@ -16688,6 +16688,10 @@ a.text-light:hover, a.text-light:focus {
   opacity: 1;
 }
 
+.slider--movie {
+  margin-top: 0.5rem;
+}
+
 .slider--movie .slick-prev {
   left: 0.25rem;
 }
